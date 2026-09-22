@@ -1,0 +1,43 @@
+@keyframes srf-global-spinner-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.srf-layout__body--show-spinner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.srf-layout__body--show-spinner:before {
+  background-color: #f4f5f5;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+}
+.srf-layout__body--show-spinner:after {
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+  animation-name: srf-global-spinner-rotate;
+  animation-timing-function: linear;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iIzAwMGMwODI5IiBkPSJNMTYuOTggMjAuNjI2Yy41NjMuOTc1IDEuODI1IDEuMzIyIDIuNjkyLjYwMUExMiAxMiAwIDAgMCA3Ljg0NS43NDJjLTEuMDU3LjM5LTEuMzg4IDEuNjU3LS44MjUgMi42MzJzMS44MSAxLjI4IDIuODk4Ljk4NWE3LjkyIDcuOTIgMCAwIDEgNy42NTkgMTMuMjY1Yy0uOC43OTMtMS4xNiAyLjAyNi0uNTk3IDMuMDAyIi8+PC9zdmc+);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 72px 72px;
+  content: "";
+  display: block;
+  height: 72px;
+  position: absolute;
+  width: 72px;
+  z-index: 31;
+}
