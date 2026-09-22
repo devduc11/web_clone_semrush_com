@@ -1,0 +1,13 @@
+{
+  "name": "semrush-clone",
+  "version": "1.0.0",
+  "description": "Semrush.com clone with full interactive JavaScript features",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["semrush", "clone", "interactive"],
+  "author": "devduc11",
+  "license": "MIT"
+}
